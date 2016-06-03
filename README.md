@@ -1,8 +1,3 @@
-![logo](http://bigdropinc.com/wp-content/themes/bd/images/bigdrop.svg)
-
-# BigDrop Framework
-* * *
-
 ## Getting Started
 
 1. To download the framework enter the following command in your console :
