@@ -1,0 +1,60 @@
+{
+  "name": "bigdrop-kit",
+  "version": "0.2.1",
+  "description": "Bigdrop kit modules",
+  "author": "Bigdrop <bigdrop@bigdropinc.com>",
+  "private": true,
+  "dependencies": {
+    "jquery": "^2.1.4"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-inline-environment-variables": "^6.5.0",
+    "babel-plugin-transform-remove-console": "^6.5.0",
+    "babel-plugin-transform-remove-debugger": "^6.5.0",
+    "babel-polyfill": "^6.5.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babelify": "^7.2.0",
+    "browser-sync": "~2.7.6",
+    "browserify": "^12.0.1",
+    "chalk": "^1.1.1",
+    "del": "^2.2.0",
+    "gulp": "~3.9.0",
+    "gulp-autoprefixer": "~2.3.1",
+    "gulp-bump": "~0.3.1",
+    "gulp-combine-mq": "^0.4.0",
+    "gulp-csscomb": "~3.0.6",
+    "gulp-cssmin": "~0.1.7",
+    "gulp-htmlmin": "~1.1.3",
+    "gulp-if": "^2.0.0",
+    "gulp-ignore": "^2.0.1",
+    "gulp-imagemin": "~2.3.0",
+    "gulp-jscs": "~2.0.0",
+    "gulp-jshint": "~1.11.2",
+    "gulp-rename": "~1.2.2",
+    "gulp-rigger": "~0.5.8",
+    "gulp-sass": "~2.0.4",
+    "gulp-sourcemaps": "~1.5.2",
+    "gulp-streamify": "^1.0.2",
+    "gulp-svgmin": "~1.2.0",
+    "gulp-to-json": "~1.0.1",
+    "gulp-uglify": "~1.2.0",
+    "gulp-util": "^3.0.7",
+    "gulp-webp": "~2.3.0",
+    "jshint-stylish": "~2.0.1",
+    "run-sequence": "^1.1.5",
+    "streamify": "^0.2.5",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.6.1",
+    "yargs": "^3.31.0"
+  },
+  "engines": {
+    "node": ">=0.12.2",
+    "npm": ">=2.7.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}

@@ -1,0 +1,118 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Menu</title>
+        <link rel="stylesheet" href="dist/css/global.min.css"/>
+    </head>
+    <body>
+
+
+        <div class="container">
+            <style>
+                * {
+                    box-sizing: border-box;
+                }
+
+                html {
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                body {
+                    background-color: black;
+                }
+
+                ul {
+                    margin-top: 30px;
+                    list-style: none;
+                }
+
+                ul:after {
+                    content: '';
+                    clear: both;
+                    display: block;
+                }
+
+                .wrap {
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .row {
+                    max-width: 1000px;
+                    margin: auto;
+                }
+
+                ul a {
+                    font-size: 20px;
+                    border: 1px solid #fccd10;
+                    display: block;
+                    padding: 10px 20px;
+                    width: auto;
+                    float: left;
+                    clear: both;
+                    color: #fccd10;
+                    text-decoration: none;
+                    margin-bottom: 20px;
+                }
+
+                ul a:hover {
+                    text-decoration: none;
+                    background-color: #fccd10;
+                    transition: all .3s linear;
+                    color: black;
+                }
+
+                h1 {
+                    text-transform: capitalize;
+                    margin-bottom: 50px;
+                    width: 100%;
+                }
+
+                h1, h6 {
+                    display: block;
+                    color: white;
+                }
+                .logo {
+                    position: absolute;
+                    left: 30px;
+                    top: 30px;
+                }
+                #version_project_ {
+                    display: block;
+                    position: absolute;
+                    bottom: 20px;
+                    right: 30px;
+                    margin: 0;
+                }
+            </style>
+            <div class="wrap">
+                <a class="logo" href="http://bigdropinc.com"><img src="http://bigdropinc.com/wp-content/themes/bd/images/bigdrop-white.svg" alt=""/></a>
+                <h6 id="version_project_">Version: <span></span></h6>
+                <div class="row">
+                    <h1 id="name_project_"></h1>
+                    <ul class="list-unstyled " id="menu">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script>
+            $(function () {
+                $.ajax('pages.json').done(function (data) {
+                    console.log(data);
+                    $.each(data, function (a, b) {
+                        var el = $('<li><a href="dist/html/' + b + '.html">' + b.replace(/[-]|[_]/g, ' ') + '</a></li>');
+                        $('#menu').append(el);
+                    })
+                })
+                $.ajax('bower.json').done(function (data) {
+                    console.log(data);
+                    $('#name_project_').text(data.name.replace(/[-]|[_]/g, ' '));
+                    $('#version_project_').find('span').text(data.version);
+                })
+
+            })
+        </script>
+    </body>
+</html>

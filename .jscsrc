@@ -1,0 +1,26 @@
+{
+  "fileExtensions": [
+    ".js"
+  ],
+  "requireParenthesesAroundIIFE": true,
+  "maximumLineLength": 120,
+  "validateIndentation": 4,
+  "disallowKeywords": [
+    "with"
+  ],
+  "disallowSpacesInsideObjectBrackets": null,
+  "disallowImplicitTypeConversion": [
+    "string"
+  ],
+  "disallowKeywordsOnNewLine": [
+    "else"
+  ],
+  "requireSpacesInAnonymousFunctionExpression": {
+    "beforeOpeningRoundBrace": true,
+    "beforeOpeningCurlyBrace": true
+  },
+  "safeContextKeyword": "that",
+  "excludeFiles": [
+    "views/**"
+  ]
+}
