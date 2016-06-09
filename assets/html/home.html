@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/global.css"/>
+    <title>Bigdrop Kit</title>
+    <!-- Example AJAX url for WP-->
+    <script>
+        var vars = {
+            "ajaxUrl": "/assets/html/templates/footer.html",
+            page: 'home_page'
+        };
+    </script>
+
+
+</head>
+<body>
+    //= templates/svg/kiwi
+    <div id="example_wp_ajax">
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolor dolore odio quo ut! Beatae blanditiis consequatur cumque debitis deserunt dicta, dolorum ducimus impedit iusto nam necessitatibus placeat totam voluptate!</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias, aperiam asperiores, dicta error est expedita, facilis fugit illum impedit libero mollitia necessitatibus possimus praesentium quibusdam quod rem! Aperiam, dignissimos.</div>
+    </div>
+    //= templates/footer
+
+<script src="../js/global.js"></script>
+<script>
+    // Example AJAX callback for WP developers
+    window.vars.example_wp_ajax_callback = function (response) {
+        console.log(response);
+    };
+</script>
+</body>
+</html>
